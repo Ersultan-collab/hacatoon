@@ -80,7 +80,7 @@ let news = [
     {
     id: 1,
     img: "https://avatars.mds.yandex.net/i?id=ac0b97d24dedb563954ae59675f5a4edab375193-10877501-images-thumbs&n=13",
-    text: "землетрясение в Китае приближается к нам, БУДЬТЕ НАЧЕКУ",
+    text: "Землетрясение в Китае приближается к нам, будьте начеку",
     time: "Вчера",
     width: '230px'
 }, 
@@ -136,10 +136,12 @@ function createBannerNovostCard(i) {
     // Create h1 element
     const h1 = document.createElement('h1');
     h1.textContent = i.text;
+    h1.style.color = '#252B60';
 
     // Create p element
     const p = document.createElement('p');
     p.textContent = i.time;
+    p.style.color = '#252B60';
 
     // Append h1 and p elements to banner-novost-text-text
     bannerNovostTextText.appendChild(h1);
