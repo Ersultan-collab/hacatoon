@@ -1,13 +1,32 @@
-let images = ['https://www.porchdrinking.com/wp-content/uploads/2020/08/chicago.jpg', 'https://th.bing.com/th/id/OIP.3YQSVJ75FGOa8GipLT9-TwHaEK?rs=1&pid=ImgDetMain', 'https://t4.ftcdn.net/jpg/02/83/83/93/240_F_283839302_yt6JIsE96Pj4PydFDcBNKDUnuSpYB9h0.jpg']
-
+let images = ['https://avatars.mds.yandex.net/i?id=ac0b97d24dedb563954ae59675f5a4edab375193-10877501-images-thumbs&n=13', 'https://smi24.kz/userdata/article/2024/article_1369847/image.jpeg.webp', 'https://smi24.kz/userdata/article/2024/article_1354619/image.jpeg.webp']
+let texs = ['Землетрясение в Китае приближается к нам, будьте начеку','Закуп техники для поисков людей под завалами: спасатели успокоили алматинцев', 'Развязки и мосты проверили после землетрясения в Алматы']
 
 let divv = document.querySelector('.header-cards')
 
-for (let i = 0; i < images.length; i++) {
+for (let i = 0; i < images.length && i < texs.length; i++) {
     let div = document.createElement('div');
     div.className = 'header-card-one';
-    div.style.backgroundImage = `url('${images[i]}')`;
+    let divfon= document.createElement('div');
+    divfon.className = 'header-card-div-fon';
+    let divh1 = document.createElement('div');
+    divh1.className = 'header-card-div-h1';
+    let h11 = document.createElement('h1');
+    h11.style.color = 'white';
+    h11.textContent = 'Новости';
+    h11.style.margin = '0'
+
+    let h1 = document.createElement('h1');
+    h1.textContent = texs[i]; // Change texs[j] to texs[i]
+    h1.style.color = 'white';
+    h1.style.margin = '0'
+
+    divfon.style.backgroundImage = `url('${images[i]}')`;
+
+    divh1.appendChild(h11);
+    divh1.appendChild(h1);
+    div.appendChild(divh1);
     divv.appendChild(div);
+    div.appendChild(divfon);
 }
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -170,3 +189,6 @@ const newRequest = {
   }).catch(error => {
     // handle error
   })
+
+
+  // Функция для получения данных о пого
