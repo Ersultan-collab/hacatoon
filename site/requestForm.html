@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="zaiavko">
+        <div class="zaiavko-fon"></div>
+        <div class="zaiavko_form">
+            <h1>Заявка при повреждении здания</h1>
+            <div class="request-result"></div>
+            <form class="request-form">
+                <input type="text" id="type" name="type" placeholder="Тип повреждения">
+                <label for="">Степень повреждения
+                    <select name="" id="degree">
+                        <option value="Низкий">Низкий</option>
+                        <option value="Средний">Средний</option>
+                        <option value="Высокий">Высокий</option>
+                    </select>
+                </label>
+                <input type="text" id="address" name="address" placeholder="Адрес">
+                <label for="">Добавить фото <input id="photos" type="file"></label>
+                <button type="submit" id="request-submit">Отправить</button>
+                <div class="error-box"></div>
+            </form>
+
+        </div>
+    </div>
+
+    <div class="request_status_form">
+        <h1>Узнать статус заявки</h1>
+        <div class="request-status-result"><label for="" class="status-text"></label></div>
+        <form class="request-status-form">
+            <input type="text" id="status-id" name="type" placeholder="Номер заявки">
+            <button type="submit" id="request-status-submit">Узнать статус</button>
+            <div class="status-error-box"></div>
+        </form>
+
+    </div>
+    <script src="./requestForm.js"></script>
+</body>
+</html>
