@@ -1,0 +1,392 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: inter;
+    font: bold;
+    background: linear-gradient(to bottom, #D2D6E8, #3A3B43)
+}
+
+header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+
+
+.head {
+    width: 100%;
+    height: 70px;
+    background-color: #737ABA;
+}
+
+.banner {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    z-index: 5;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: auto;
+    height: 100%;
+    position: relative;
+}
+
+.header h1 {
+    color: white;
+}
+
+.headder-elements {
+    background-color: #4D4F8E;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    position: absolute;
+    margin-right: 50px;
+    bottom: 0;
+    right: 0;
+}
+
+.header-logo {
+    margin-left: 50px;
+}
+
+.header-menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+}
+
+.header-menu a {
+    text-decoration: none;
+    color: white;
+}
+
+.header-icon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    color: white;
+}
+
+.ion {
+    width: 25px;
+    height: 25px;
+    color: white;
+}
+
+
+.header-banner {
+    width: 100%;
+    height: 500px;
+    margin: auto;
+    background: url(https://docs.ambeedata.com/_next/static/media/footerBG.e091edc1.gif);
+    background-size: cover;
+    filter: brightness(50%);
+}
+
+
+
+.header-p {
+    color: white;
+    cursor: pointer;
+    transition: color 0.5s ease;
+    margin: 0;
+}
+
+.header-p:hover {
+    color: #160D7B;
+}
+
+
+.header-cards {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: -150px;
+}
+
+.banner {
+    position: absolute;
+    width: 100%;
+    background-color: white;
+    top: 500px;
+}
+
+.header-card-one {
+    width: 27%;
+    height: 250px;
+    background-color: rgb(19, 19, 19);
+    background-size: cover;
+    background-position: center;
+    filter: brightness(50%);
+}
+
+.lenta {
+    width: 200px;
+    height: 390px;
+    position: relative;
+}
+
+.lenta-re {
+    width: 100%;
+    height: 390px;
+    position: absolute;
+    background: #D2D6E8;
+    opacity: 0.2;
+    filter: blur(5px);
+}
+
+.lenta-text {
+    width: 100%;
+    height: 390px;
+    overflow: scroll;
+    background-color: transparent;
+    position: absolute;
+}
+
+.lenta-text::-webkit-scrollbar {
+    display: none;
+}
+
+.banner-novost {
+    width: 100%;
+    position: absolute;
+    top: 500px;
+    background-color: #E6E6E8;
+    height: 100%;
+    z-index: 10;
+}
+
+.banner-novost-text {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.banner-novost-cards {
+    background-color: white;
+    border-radius: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.banner-novost-elements {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.banner-novost-text-one {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.banner-novost-button {
+    border-radius: 30px;
+    padding: 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid gray;
+    width: 100px;
+    background: transparent;
+    gap: 10px;
+}
+
+.banner-novost-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+    height: 150px;
+    border-bottom: 1px solid black;
+    padding: 10px 0;
+}
+
+.banner-novost-card img {
+    width: 200px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.banner-novost-text-text {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    height: 100%;
+}
+
+/* FUTTER */
+
+.futter {
+    display: flex;
+    flex-direction: column;
+}
+
+.list1_footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    color: #fff;
+    width: 100%;
+    height: 77px;
+    background-color: #3A384E;
+}
+
+
+/* 2 */
+
+.list2_footer {
+    background-color: #292929;
+}
+
+.list2_footer_text {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    height: 78px;
+
+}
+
+.list2_footer_text a {
+    text-decoration: none;
+    color: #fff;
+
+}
+
+/* 3 */
+.footer {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    top: 50px;
+
+}
+
+.footer_a {
+    display: flex;
+    flex-direction: column;
+}
+
+/* FORMA */
+
+.zaiavko-fon {
+    position: absolute;
+    background-color: rgb(255,255,255,.1);
+    width: 100%;
+    height: 100%;
+    filter: blur(2px);
+    z-index: -1;
+    border-radius: 30px;
+}
+
+.zaiavko_form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+
+}
+
+.input{
+    width: 80%;
+    padding: 15px;
+    border-radius: 30px;
+    border: 1px solid white;
+    background: transparent;
+    border: none;
+}
+
+.zaiavko {
+    position: relative;
+    margin: auto;
+    height: 350px;
+    width: 60%;
+    margin-top: 40px;
+}
+
+
+
+
+/* волный */
+/* 
+body {
+    height: 100vh;
+    background: #111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+svg {
+    width: 800px;
+    height: 100%;
+    padding: 50px;
+}
+
+line {
+    stroke-width: 1;
+    stroke: #3c3c3c;
+}
+
+#wave {
+    fill: none;
+    stroke-width: 4;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: #56acf4;
+} */
